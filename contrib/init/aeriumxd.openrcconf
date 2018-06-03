@@ -1,0 +1,26 @@
+# /etc/conf.d/aeriumxd: config file for /etc/init.d/aeriumxd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/aeriumx/aeriumx.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/aeriumxd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/aeriumxd.pid"
+
+# Where to write aeriumxd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/aeriumxd"
+
+# User and group to own aeriumxd process
+#BITCOIND_USER="aeriumx"
+#BITCOIND_GROUP="aeriumx"
+
+# Path to aeriumxd executable
+#BITCOIND_BIN="/usr/bin/aeriumxd"
+
+# Nice value to run aeriumxd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

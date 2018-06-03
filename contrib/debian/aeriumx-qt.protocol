@@ -1,0 +1,11 @@
+[Protocol]
+exec=aeriumx-qt '%u'
+protocol=aeriumx
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
