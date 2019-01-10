@@ -125,15 +125,15 @@ public:
         nMaxMoneyOut = 100000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 312481;
+        nLastPOWBlock = 284656;
         nModifierUpdateBlock = 0;
-        nZerocoinStartHeight = 312482;
+        nZerocoinStartHeight = nLastPOWBlock + 1;
         nZerocoinStartTime = 1515434000; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = 312484; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 312485; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 312483; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 312485; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 312481; //Start enforcing the invalid UTXO's
+        nBlockEnforceSerialRange = nLastPOWBlock + 3; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = nLastPOWBlock + 4; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = nLastPOWBlock + 2; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = nLastPOWBlock + 4; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = nLastPOWBlock; //Start enforcing the invalid UTXO's
 
 
         /**        * Build the genesis block. Note that the output of the genesis coinbase cannot
