@@ -56,9 +56,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0x00000d678dad8967cf06bbae41ee9ebf06762981e69e406466a5acc151098f1b"))
-	(1, uint256("0x000004bdfff5705bf5c282dad3f745d38fc53fc510653a263125043080920d4f"))
-	(2, uint256("0x000003a63e84036b60b6a20f2d869661206587275c1b0aeea9f2856da54cda60"))
-	(3, uint256("0x00000bfc64bc487c6fc45da6aa68cf09e307f7df169735dd95d8273aa54d8b70"));
+    (1, uint256("0x000004bdfff5705bf5c282dad3f745d38fc53fc510653a263125043080920d4f"))
+    (2, uint256("0x000003a63e84036b60b6a20f2d869661206587275c1b0aeea9f2856da54cda60"))
+    (3, uint256("0x00000bfc64bc487c6fc45da6aa68cf09e307f7df169735dd95d8273aa54d8b70"))
+    (1030000, uint256("b6749552eca29ba44eaab629e86578b87c63a8d014ca1dc5f50bb5197ed68072"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -165,12 +166,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xe4cfeea4b73dc8337b61ce1a12c1c04014c90e74968dab5d74ef3ad3336e981a"));
 
 
-        vSeeds.push_back(CDNSSeedData("45.77.1.134", "45.77.1.134"));
-        vSeeds.push_back(CDNSSeedData("45.77.188.200", "45.77.188.200"));
-		vSeeds.push_back(CDNSSeedData("104.238.180.206", "104.238.180.206"));
-		vSeeds.push_back(CDNSSeedData("45.32.130.174", "45.32.130.174"));
-		vSeeds.push_back(CDNSSeedData("104.238.183.140", "104.238.183.140"));
-		vSeeds.push_back(CDNSSeedData("45.63.85.165", "45.63.85.165"));
+	vSeeds.push_back(CDNSSeedData("45.77.1.134", "45.77.1.134"));
+	vSeeds.push_back(CDNSSeedData("45.63.85.165", "45.63.85.165"));
+	vSeeds.push_back(CDNSSeedData("45.63.27.53", "45.63.27.53"));
+	vSeeds.push_back(CDNSSeedData("45.32.22.162", "45.32.22.162"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83);
